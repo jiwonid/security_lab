@@ -10,6 +10,8 @@
 /*										*/
 /********************************************************************************/
 
+var db = require("./database.js");
+
 require("dotenv").config()
 var express = require("express");
 var favicon = require("serve-favicon");
