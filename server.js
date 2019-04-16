@@ -11,6 +11,8 @@
 /********************************************************************************/
 
 var db = require("./database.js");
+var q = "SELECT * FROM User WHERE userId = 'jchoi40'";
+      db.query(q,function (e1,d1) { console.log(d1) } );
 
 require("dotenv").config()
 var express = require("express");
