@@ -122,7 +122,7 @@ function handleLoginRequest1(req,res,next,err,data)
        }
 
       req.session.userId = userdata.userId;
-      if (userdata.isAdmin) return res.redirect("/benefits");
+      if (!userdata.isAdmin) return res.redirect("/benefits");
       else return res.redirect("/dashboard");
     }
 }
